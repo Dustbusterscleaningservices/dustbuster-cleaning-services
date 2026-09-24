@@ -238,14 +238,23 @@
         <div class="quote-copy">
           <div class="eyebrow eyebrow-dark">Free Quote</div>
           <h2>Ready for a cleaner space?</h2>
-          <p>Fill out the form and we’ll prepare a text with your property details. Send it directly to The Dustbusters for a free quote.</p>
+          <p>Fill out the form and send your property details directly to The Dustbusters. We’ll use your preferred contact method to follow up about your free quote.</p>
           <div class="quote-contact"><span>Call or text</span><a href="tel:+18634442040">863-444-2040</a></div>
         </div>
 
-        <form id="quote-form" class="quote-form">
+        <form id="quote-form" class="quote-form" action="https://formsubmit.co/dustbusterda7071@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Dustbusters Cleaning Quote Request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://dustbustercleaningservices.us/thanks.html">
+          <input type="hidden" name="_url" value="https://dustbustercleaningservices.us/">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field-grid">
             <label><span>Name *</span><input name="name" type="text" autocomplete="name" required></label>
             <label><span>Phone *</span><input name="phone" type="tel" autocomplete="tel" required></label>
+          </div>
+          <div class="field-grid">
+            <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="Optional"></label>
+            <label><span>Preferred Contact</span><select name="preferred_contact"><option>Phone Call</option><option>Text Message</option><option>Email</option></select></label>
           </div>
           <div class="field-grid">
             <label><span>City / Area *</span><input name="city" type="text" placeholder="e.g. Port Charlotte" required></label>
@@ -269,13 +278,8 @@
             <label><span>Bathrooms</span><input name="baths" type="number" min="0" max="20" step="0.5"></label>
           </div>
           <label><span>Anything else we should know?</span><textarea name="notes" rows="4" placeholder="Condition, pets, preferred timing, special areas, add-ons, etc."></textarea></label>
-          <button class="button button-primary button-full" type="submit">Text My Quote Request</button>
-          <p class="form-note">Your device’s messaging app will open with your quote details pre-filled.</p>
-          <div id="form-fallback" class="form-fallback" hidden>
-            <strong>If your messaging app did not open:</strong>
-            <p id="quote-preview"></p>
-            <button type="button" id="copy-quote" class="copy-button">Copy Quote Details</button>
-          </div>
+          <button class="button button-primary button-full" type="submit">Send My Free Quote Request</button>
+          <p class="form-note">Your request will be sent directly to The Dustbusters. Prefer texting? <a href="sms:+18634442040">Text 863-444-2040</a>.</p>
         </form>
       </div>
     </section>
