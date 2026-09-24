@@ -256,8 +256,12 @@
             <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="Optional"></label>
             <label><span>Preferred Contact</span><select name="preferred_contact"><option>Phone Call</option><option>Text Message</option><option>Email</option></select></label>
           </div>
+          <label>
+            <span>Property Address *</span>
+            <input name="property_address" type="text" autocomplete="street-address" placeholder="Street address, city, state & ZIP" required>
+          </label>
           <div class="field-grid">
-            <label><span>City / Area *</span><input name="city" type="text" placeholder="e.g. Port Charlotte" required></label>
+            <label><span>City / Area *</span><input name="city" type="text" autocomplete="address-level2" placeholder="e.g. Port Charlotte" required></label>
             <label><span>Approx. Square Feet</span><input name="sqft" type="text" inputmode="numeric" placeholder="e.g. 1,800"></label>
           </div>
           <label>
